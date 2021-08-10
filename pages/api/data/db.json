@@ -1,0 +1,95 @@
+{
+  "cardInfo": [
+    {
+      "title": "New Leds",
+      "header": "$205",
+	  "icon": "/img/card-icon-1.png",
+      "category": "New Leds",
+      "id": 1
+    },
+    {
+      "title": "Sales",
+	  "header": "$4021",
+	  "icon": "/img/card-icon-2.png",
+      "category": "Sales",
+      "id": 2
+    },
+    {
+      "title": "Orders",
+	  "header": "$80",
+	  "icon": "/img/card-icon-3.png",
+      "category": "Orders",
+      "id": 3
+    },
+    {
+      "title": "Expense",
+	  "header": "$1200",
+	  "icon": "/img/card-icon-4.png",
+      "category": "Expense",
+      "id": 4
+    }
+  ],
+  
+  "menuItems": [
+	{ 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-1.png", 
+      "path": "/",
+	  "id": 1
+    },
+    { 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-2.png", 
+      "path": "/path2",
+	  "id": 2 
+    },
+	{ 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-3.png", 
+      "path": "/path3",
+	  "id": 3 
+    },
+	{ 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-4.png", 
+      "path": "/path4",
+	  "id": 4 
+    },
+	{ 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-5.png", 
+      "path": "/path5",
+	  "id": 5 
+    },
+	{ 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-6.png", 
+      "path": "/path6",
+	  "id": 6 
+    },
+	{ 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-7.png", 
+      "path": "/path7",
+	  "id": 7 
+    },
+	{ 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-8.png", 
+      "path": "/path8",
+	  "id": 8 
+    },
+	{ 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-9.png", 
+      "path": "/path9",
+	  "id": 9 
+    },
+	{ 
+      "text": "Dashboard", 
+      "icon": "/img/icon-img-10.png", 
+      "path": "/path10",
+	  "id": 10 
+    }
+  ] 
+}
