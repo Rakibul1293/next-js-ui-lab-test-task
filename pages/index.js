@@ -1,7 +1,7 @@
 import Card from '../components/Card';
 
 export const getServerSideProps = async() => {
-	const res = await fetch('https://ui-lab-test-task.herokuapp.com/api/cardInfo'); 
+	const res = await fetch('https://next-js-ui-lab-test-task-api.herokuapp.com/api/cardInfo'); 
 	const data = await res.json();
 	
 	return {

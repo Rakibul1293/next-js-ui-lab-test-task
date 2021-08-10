@@ -180,7 +180,7 @@ export default function Layout({ children }) {
 	const router = useRouter();
 	
 	useEffect(() => {
-		fetch('https://ui-lab-test-task.herokuapp.com/api/menuItems')
+		fetch('https://next-js-ui-lab-test-task-api.herokuapp.com/api/menuItems')
 		  .then(res => res.json())
 		  .then(data => setMenuItems(data.data))
 	}, [])

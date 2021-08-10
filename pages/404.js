@@ -14,7 +14,7 @@ const NotFound = () => {
 
   return (
     <div className={styles.content}>
-      <h2>Ooops... Page can't be found :(</h2>
+      <h2>Ooops... Page can not be found :(</h2>
       <p>Going back to the <Link href="/"><a>Homepage</a></Link> is 3 seconds...</p>
     </div>
   );

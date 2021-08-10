@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 
 /*
 export const getStaticPaths = async() => {
-	const res = await fetch('https://ui-lab-test-task.herokuapp.com/api/menuItems'); 
+	const res = await fetch('https://next-js-ui-lab-test-task-api.herokuapp.com/api/menuItems'); 
 	const data = await res.json();
 	
 	const paths = data.data.map((items) => {
@@ -19,7 +19,7 @@ export const getStaticPaths = async() => {
 
 export const getStaticProps = async(context) => {
 	const pages = context.params.pages;
-	const res = await fetch('https://ui-lab-test-task.herokuapp.com/api/menuItems' + pages); 
+	const res = await fetch('https://next-js-ui-lab-test-task-api.herokuapp.com/api/menuItems' + pages); 
 	const data = await res.json();
 	console.log(pages);
 	
