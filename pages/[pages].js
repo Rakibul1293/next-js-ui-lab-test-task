@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 
-/*
 export const getStaticPaths = async() => {
 	const res = await fetch('https://next-js-ui-lab-test-task-api.herokuapp.com/api/menuItems'); 
 	const data = await res.json();
@@ -10,6 +9,7 @@ export const getStaticPaths = async() => {
 			params: { pages: items._id.toString() }
 		}
 	})
+	console.log(paths);
 
 	return {
 		paths,
@@ -19,22 +19,23 @@ export const getStaticPaths = async() => {
 
 export const getStaticProps = async(context) => {
 	const pages = context.params.pages;
-	const res = await fetch('https://next-js-ui-lab-test-task-api.herokuapp.com/api/menuItems' + pages); 
-	const data = await res.json();
 	console.log(pages);
+	const res = await fetch('https://next-js-ui-lab-test-task-api.herokuapp.com/api/menuItems/' + pages);
+	const data = await res.json();
+	console.log(data);
 	
 	return {
 		props: { data }
 	}
 }
-*/
 
-export default function Pages(props) {
+export default function Page(props) {
   const router = useRouter();
+  console.log(props);
   
   return (
     <>
-		<h1 style={{padding: "30px", textAlign: "center"}}>{router.query.pages}{props.path}</h1>
+		<h1 style={{padding: "30px", textAlign: "center"}}>Fetch Id From Database: {props.data.data._id}</h1>
     </>
   )
 }

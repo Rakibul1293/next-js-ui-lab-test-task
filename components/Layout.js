@@ -234,7 +234,6 @@ export default function Layout({ children }) {
 			</AppBar>
 
 			{/* drawer */}
-
 			{
 				open &&
 				<Drawer
@@ -246,13 +245,13 @@ export default function Layout({ children }) {
 					<div className={classes.logoTopBottomGap}>
 						<Link href="/"><Image width='50%' height='25%' src="/img/logo.png" /></Link>
 					</div>
-
+					
 					{
 						menuItems.map((item) => (
 							<>
-								<div className={router.asPath == item.path ? classes.active : null} key={item.id}>
+								<div className={router.asPath == item.path ? classes.active : null} key={item.id} onClick={() => router.push(item._id)}>
 									<div className={classes.sidebarIconTopBottomGap}>
-										<div className={classes.sidebarItem} onClick={() => router.push(item.path)}>
+										<div className={classes.sidebarItem}>
 											<span><Image width='30' height='30' src={item.icon} /></span>
 											<Typography variant="body2" className={classes.sidebarIconBottomText}>{item.text}</Typography>
 										</div>
